@@ -15,44 +15,7 @@ const Services = () => {
     text:
       'Consectetur ullamco cupidatat pariatur laborum non non excepteur officia fugiat veniam ea Lorem fugiat. Ex quis aute mollit aliqua exercitation exercitation incididunt veniam elit veniam enim non nisi mollit.',
   });
-  const [state] = React.useState([
-    {
-      id: 1,
-      icon: '<FaGithub />',
-      heading: 'Development',
-      text: 'Laboris deserunt velit laboris amet sunt laborum.',
-    },
-    {
-      id: 2,
-      icon: 'FaCamera',
-      heading: 'Photography',
-      text: 'Laboris deserunt velit laboris amet sunt laborum.',
-    },
-    {
-      id: 3,
-      icon: 'FaCircleNotch',
-      heading: 'Web Design',
-      text: 'Laboris deserunt velit laboris amet sunt laborum.',
-    },
-    {
-      id: 4,
-      icon: 'FaApple',
-      heading: 'App Development',
-      text: 'Laboris deserunt velit laboris amet sunt laborum.',
-    },
-    {
-      id: 5,
-      icon: 'FaVideo',
-      heading: 'Video Editing',
-      text: 'Laboris deserunt velit laboris amet sunt laborum.',
-    },
-    {
-      id: 6,
-      icon: 'FaSearchDollar',
-      heading: 'SEO Expert',
-      text: 'Laboris deserunt velit laboris amet sunt laborum.',
-    },
-  ]);
+
   return (
     <div className='services'>
       <div className='container'>
@@ -65,15 +28,50 @@ const Services = () => {
           </div>
 
           <div className='row bgMain'>
-            {state.map((info) => (
-              <div className='col-4 bgMain'>
-                <div className='services__box'>
-                  <FaGithub className='commonIcons' />
-                  <div className='services__box-header'>{info.heading}</div>
-                  <div className='services__box-p'>{info.text}</div>
+            <div className='col-4 bgMain'>
+              <div className='services__box'>
+                <FaGithub className='commonIcons' />
+                <div className='services__box-header'>Development</div>
+                <div className='services__box-p'>
+                  Laboris deserunt velit laboris amet sunt laborum.
                 </div>
               </div>
-            ))}
+              <div className='services__box'>
+                <FaCamera className='commonIcons' />
+                <div className='services__box-header'>Photography</div>
+                <div className='services__box-p'>
+                  Laboris deserunt velit laboris amet sunt laborum.
+                </div>
+              </div>
+              <div className='services__box'>
+                <FaCircleNotch className='commonIcons' />
+                <div className='services__box-header'>Web Design</div>
+                <div className='services__box-p'>
+                  Laboris deserunt velit laboris amet sunt laborum.
+                </div>
+              </div>
+              <div className='services__box'>
+                <FaApple className='commonIcons' />
+                <div className='services__box-header'>App Development</div>
+                <div className='services__box-p'>
+                  Laboris deserunt velit laboris amet sunt laborum.
+                </div>
+              </div>
+              <div className='services__box'>
+                <FaVideo className='commonIcons' />
+                <div className='services__box-header'>Video Editing</div>
+                <div className='services__box-p'>
+                  Laboris deserunt velit laboris amet sunt laborum.
+                </div>
+              </div>
+              <div className='services__box'>
+                <FaSearchDollar className='commonIcons' />
+                <div className='services__box-header'>SEO Expert</div>
+                <div className='services__box-p'>
+                  Laboris deserunt velit laboris amet sunt laborum.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

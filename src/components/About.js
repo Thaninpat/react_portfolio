@@ -10,7 +10,7 @@ const About = () => {
     {
       id: 1,
       title: 'Name',
-      text: 'Thaninpat',
+      text: 'Thaninpat Omak',
     },
     {
       id: 2,
@@ -37,10 +37,7 @@ const About = () => {
             <p className='mainContent'>{header.text}</p>
             <div className='commonBorder'></div>
           </div>
-          <div
-            className='row'
-            style={{ height: '650px', alignItems: 'center' }}
-          >
+          <div className='row hg' style={{ alignItems: 'center' }}>
             <div className='col-6'>
               <div className='about__img'>
                 <img src='/images/man-02.png' alt='man' />
